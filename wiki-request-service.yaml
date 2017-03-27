@@ -8,11 +8,12 @@ spec:
   selector:
     app: request-wiki
   ports:
-#  - name: app
-  - port: 80
+  - name: app
+    port: 3000
     protocol: TCP
     targetPort: 8000
-#  - name: external-connection
-#    port: 80
-#    protocol: TCP
+  - name: external-connection
+    port: 80
+    protocol: TCP
+    targetPort: 80
   type: LoadBalancer
