@@ -8,11 +8,11 @@ spec:
   selector:
     app: request-wiki
   ports:
-  - name: app
-    port: 8000
+#  - name: app
+  - port: 8000
     protocol: TCP
     nodePort: 30061
-  - name: external-connection
-    port: 80
-    protocol: TCP
+#  - name: external-connection
+#    port: 80
+#    protocol: TCP
   type: LoadBalancer
