@@ -1,0 +1,16 @@
+{
+  "name": "request-wikipedia",
+  "version": "1.0.0",
+  "description": "to request wiki checking the connection between the kube deployment and the outer world",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "hady rashwan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "request": "^2.81.0"
+  }
+}
