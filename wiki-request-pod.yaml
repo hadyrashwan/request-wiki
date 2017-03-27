@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: request-wiki
+  name: request-wiki-service
   labels:
     app: request-wiki
 spec:
