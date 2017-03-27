@@ -9,9 +9,9 @@ spec:
     app: request-wiki
   ports:
 #  - name: app
-  - port: 8000
+  - port: 80
     protocol: TCP
-    targetPort: 82
+    targetPort: 8000
 #  - name: external-connection
 #    port: 80
 #    protocol: TCP
