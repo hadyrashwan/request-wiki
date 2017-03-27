@@ -3,7 +3,7 @@ kind: Service
 metadata:
   labels:
     name: request-wiki
-  name:  request-wiki
+  name:  request-wiki-service
 spec:
   selector:
     app: request-wiki
