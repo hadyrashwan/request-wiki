@@ -8,7 +8,7 @@ spec:
   selector:
     app: request-wiki
   ports:
-  - port: 3000
+  - port: 8000
     protocol: TCP
-    nodePort: 30061
+    nodePort: 3000
   type: LoadBalancer
