@@ -11,7 +11,7 @@ spec:
 #  - name: app
   - port: 8000
     protocol: TCP
-    nodePort: 30061
+    targetPort: 82
 #  - name: external-connection
 #    port: 80
 #    protocol: TCP
