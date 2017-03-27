@@ -5,10 +5,10 @@ metadata:
     name: request-wiki
   name:  request-wiki
 spec:
-  ports:
-    # The port that this service should serve on.
-    - port: 82
-  # Label keys and values that must match in order to receive traffic for this service.
   selector:
     app: request-wiki
-  type: LoadBalance
+  ports:
+  - port: 3000
+    protocol: TCP
+    nodePort: 30061
+  type: LoadBalancer

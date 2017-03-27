@@ -12,5 +12,6 @@ spec:
       containers:
       - name: request-wiki
         image: hadyrashwan/request-wiki:0.0.2
+        imagePullPolicy: Always
         ports:
-        - containerPort: 3000
+        - containerPort: 8000
