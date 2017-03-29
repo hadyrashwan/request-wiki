@@ -12,7 +12,7 @@ spec:
       port: 3000
       protocol: TCP
       targetPort: 8000
-    - name: app
+    - name: http
       port: 80
       protocol: TCP
       targetPort: 80
