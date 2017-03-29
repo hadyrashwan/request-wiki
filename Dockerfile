@@ -13,4 +13,5 @@ COPY . /usr/src/app
 
 EXPOSE 8000
 EXPOSE 80
+EXPOSE 443S
 CMD [ "npm", "start" ]

@@ -6,7 +6,7 @@ var requesCounter=0
 var requesCounterError=0
 getWiki=function(){
   request.get({
-      url: "http://en.wikipedia.org/w/api.php?action=opensearch&search=bee&limit=1&format=json",
+      url: "https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=Stack%20Overflow",
       json: true,
   }, function(error, response, body) {
       if (error) {
