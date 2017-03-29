@@ -8,11 +8,11 @@ spec:
   selector:
     app: request-wiki
   ports:
-#  - name: app
+ - name: app
   - port: 3000
     protocol: TCP
     targetPort: 8000
-#  - name: app
-#    protocol: TCP
-#    targetPort: 80
+ - name: app
+   protocol: TCP
+   targetPort: 80
   type: LoadBalancer
