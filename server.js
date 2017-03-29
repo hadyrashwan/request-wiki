@@ -11,6 +11,7 @@ getWiki=function(){
       if (error) {
           console.error(error);
           // return res.json(body);
+          wikiResponse = error
       }else{
         requesCounter=requesCounter+1
       }
