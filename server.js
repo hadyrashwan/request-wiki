@@ -3,6 +3,7 @@ var app = express()
 var request = require('request');
 var wikiResponse = ""
 var requesCounter=0
+var requesCounterError=0
 getWiki=function(){
   request.get({
       url: "http://en.wikipedia.org/w/api.php?action=opensearch&search=bee&limit=1&format=json",
@@ -12,6 +13,7 @@ getWiki=function(){
           console.error(error);
           // return res.json(body);
           wikiResponse = error
+          requesCounterError=requesCounterError+1
       }else{
         requesCounter=requesCounter+1
       }
@@ -28,7 +30,7 @@ app.get('/healthz', function (req, res, next) {
 app.get('/', function(req, res) {
     getWiki();
     var stringRequest = "a new request , "+"number of requests is "+requesCounter ;
-    res.send('Hello World!'+"</br>" + JSON.stringify(wikiResponse)+"</br>"+stringRequest)
+    res.send('Hello World!'+"</br>" + JSON.stringify(wikiResponse)+"</br>"+stringRequest+"</br>"+wikiResponse+"</br> number of requests failed is "+requesCounterError)
     console.log(stringRequest);
 })
 
