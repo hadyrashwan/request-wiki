@@ -15,5 +15,5 @@ spec:
         imagePullPolicy: Always
         ports:
         - containerPort: 8000
-        - containerPort: 80
-        - containerPort: 443
+        # - containerPort: 80
+        # - containerPort: 443
